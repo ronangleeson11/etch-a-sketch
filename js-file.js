@@ -22,6 +22,7 @@ reset.addEventListener("click", () => {
     } else {
         grid.remove();
         grid = document.createElement("div");
+        grid.id = "grid";
         for (let i = 0; i < size; i++) {
             let cell = document.createElement("div");
             cell.classList.add("cell");
