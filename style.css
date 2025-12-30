@@ -6,10 +6,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     /* margin: 33vh; */
+    margin: 12vh 66vh;
+
 }
 
 .cell {
-    flex: 5.8%;
+    flex: 5%;
     border-style: solid;
     height: auto;
     aspect-ratio: 1;
