@@ -1,3 +1,16 @@
-p {
-    color: red;
+body {
+    box-sizing: border-box;
 }
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 33vh; */
+}
+
+.cell {
+    flex: 5.8%;
+    border-style: solid;
+    height: auto;
+    aspect-ratio: 1;
+}    
