@@ -23,12 +23,20 @@ reset.addEventListener("click", () => {
         grid.remove();
         grid = document.createElement("div");
         grid.id = "grid";
-        for (let i = 0; i < size; i++) {
+        for (let i = 0; i < size * size; i++) {
             let cell = document.createElement("div");
             cell.classList.add("cell");
             cell.id = `c${i}`;
+            cell.style.flex = `calc(${100 / size}% - 2px)`;
             grid.append(cell);
         }
+        grid.addEventListener("mouseover", (event) => {
+            let id = event.target.id;
+            let cell = document.querySelector(`#${id}`);
+            if (id.charAt(0) == "c") {
+                cell.style.backgroundColor = "red";
+            }
+        });
         document.querySelector("body").append(grid);
     }
 })

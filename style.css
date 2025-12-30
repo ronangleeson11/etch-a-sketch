@@ -3,16 +3,14 @@ body {
 }
 
 #grid {
+    width: 480px;
     display: flex;
     flex-wrap: wrap;
-    /* margin: 33vh; */
-    margin: 12vh 66vh;
-
 }
 
 .cell {
-    flex: 5%;
+    flex: calc(6.25% - 2px);
     border-style: solid;
-    height: auto;
+    border-width: 1px;
     aspect-ratio: 1;
 }    
